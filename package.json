@@ -27,7 +27,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paulirish/webtreemap-cdt.git"
+    "url": "git+https://github.com/kaytwo/webtreemap-cdt.git"
   },
   "keywords": [
     "treemap",
@@ -36,9 +36,9 @@
   "author": "Evan Martin <evan.martin@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/paulirish/webtreemap-cdt/issues"
+    "url": "https://github.com/kaytwo/webtreemap-cdt/issues"
   },
-  "homepage": "https://github.com/paulirish/webtreemap-cdt",
+  "homepage": "https://github.com/kaytwo/webtreemap-cdt",
   "prettier": {
     "singleQuote": true,
     "trailingComma": "es5",
