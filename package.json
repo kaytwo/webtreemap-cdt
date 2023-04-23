@@ -1,6 +1,6 @@
 {
   "name": "@kaytwo/webtreemap-cdt",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "treemap visualization",
   "module": "build/index.js",
   "main": "build/index.js",
