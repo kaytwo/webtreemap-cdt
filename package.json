@@ -1,29 +1,21 @@
 {
-  "name": "webtreemap-cdt",
-  "version": "3.2.1",
+  "name": "@kaytwo/webtreemap-cdt",
+  "version": "3.2.2",
   "description": "treemap visualization",
-  "main": "dist/webtreemap.js",
-  "bin": {
-    "webtreemap": "build/cli.js"
-  },
-  "dependencies": {
-    "commander": "^2.11.0"
-  },
+  "browser": "dist/webtreemap.js",
+  "module": "build/index.js",
+  "type": "module",
   "devDependencies": {
-    "@types/commander": "^2.11.0",
-    "@types/node": "^8.0.34",
-    "prettier": "1.14.3",
-    "rollup": "^1.19.4",
+    "@types/node": "^18.15.13",
+    "prettier": "^2.8.7",
+    "rollup": "^3.20.7",
     "rollup-plugin-banner": "^0.2.1",
-    "typescript": "^3.1.3"
+    "typescript": "^5.0.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fmt": "prettier --write src/*.ts demo/*.ts *.md",
+    "fmt": "prettier --write src/*.ts *.md",
     "build": "tsc && rollup -c",
-    "demo": "mkdir -p public; du -a node_modules/ | node build/cli.js --title 'node_modules for webtreemap' > public/index.html",
-    "build:demo": "yarn build && yarn tsc --module commonjs && yarn demo",
-    "watch": "find src | entr yarn build:demo",
     "clean": "rm -rf build dist public",
     "roll": "yarn build; gcp -f dist/webtreemap.js ~/chromium/src/third_party/third_party/devtools-frontend/src/front_end/third_party/webtreemap/webtreemap.js"
   },
