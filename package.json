@@ -2,9 +2,10 @@
   "name": "@kaytwo/webtreemap-cdt",
   "version": "3.2.2",
   "description": "treemap visualization",
-  "browser": "dist/webtreemap.js",
   "module": "build/index.js",
+  "main": "build/index.js",
   "type": "module",
+  "exports": "./build/index.js",
   "devDependencies": {
     "@types/node": "^18.15.13",
     "prettier": "^2.8.7",
